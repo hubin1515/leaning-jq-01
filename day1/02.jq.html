@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<input type="button" value="显示效果" id="btn" />
+		<div id="dv"></div>
+		
+         <!--//引入js文件-->
+		<script src="jquery-1.12.1.js"></script>
+		
+		<script>			
+//			点击按钮,设置div的宽和高,背景颜色
+//			dom方式实现
+
+
+
+
+//			document.getElementById("btn").onclick = function(){
+//				var dvObj = document.getElementById("dv");
+//				dvObj.style.width = "200px";
+//				dvObj.style.height = "100px";
+//				dvObj.style.backgroundColor = "pink";	
+//			};	
+
+ 			//用jQuery实现
+ 			$("#btn").click(function (){
+ 				$("#dv").css({"width":"200px","height":"100px","backgroundColor":"yellow"});
+ 			});
+
+		</script>
+		
+	</body>
+</html>

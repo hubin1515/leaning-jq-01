@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jquery和dom对象互转</title>
+		
+			
+<!--		
+		dom对象转jq对象------$（dom对象）
+		jq对象转dom对象------jq对象[0]
+		
+		为什么要互转：dom操作很复杂
+					  jq对象操作简单，不需要写兼容
+					  
+					  
+					  jq对象中有一些兼容没有封装时需要转dom对象
+		
+		-->
+		
+	</head>
+	<body>
+		
+		<input type="button" value="按钮" id="btn" />
+		
+		<script src="jquery-1.12.1.js"></script>
+		
+		
+		<script>
+		$("#btn").click(function (){
+
+			console.log("胡彬很帅啊");
+								
+		});
+		
+		</script>
+		
+	</body>
+</html>

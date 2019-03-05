@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<input type="button" value="显示效果" id="btn" />
+		<p>第一个</p>
+		<p>第二个</p>
+		<p>第三个</p>
+		<p>第四个</p>
+		<p>第五个</p>
+		
+		<!--//jquery实现-->
+		<script src="jquery-1.12.1.js"></script>
+		
+		<script>
+			
+			$("#btn").click(function(){
+				$("p").text("我们都是程序员");
+			});
+			
+		</script>
+		
+		<script>
+			
+			//点击按钮，改变所有p中内容
+			//获取按钮，注册点击事件
+			
+//			document.getElementById("btn").onclick=function (){
+//				var pObjs=document.getElementsByTagName("p");
+//				for(var i=o;i<pObjs.length;i++){
+//					pObjs[i].innerText="我们都是p";				
+//				}
+//			};
+//			
+		</script>
+		
+	</body>
+</html>

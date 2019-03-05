@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>开关灯</title>
+	</head>
+	<body>
+		
+		<input type="button" value="关灯" id="btn" />
+		<script src="jquery-1.12.1.js"></script>
+		<script>
+			
+//			$("#btn").click(function (){
+//				  //判断body标签是否应用了cls样式
+//				if($("body").hasClass("cls")){
+//				  //应用了	  移除
+//					$("body").removeClass("cls");
+//				}else{
+//				  //没有应用	增加
+//					$("body").addClass("cls");
+//				}
+//			}):
+
+			$("#btn").click(function(){
+				if($(this).val()=="关灯"){
+					$("body").css("background-color","black");
+					$(this).val("开灯");
+				}else{
+					$("body").css("background-color","");
+					$(this).val("关灯");
+				}
+			});
+
+
+			
+		</script>
+	</body>
+</html>
